@@ -1,0 +1,86 @@
+$main_color: #F4E8E4;
+
+$orange_color: #E65003;
+
+$main_txt_size: 100px;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $main_color;
+}
+
+.about, .work{
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.about{
+  background-color: $orange_color;
+}
+
+.about p{
+  color: #fff;
+}
+
+.work{
+  background-color: #E4BCCF;
+}
+
+.work p{
+  color: $orange_color;
+}
+
+
+.about p, .work p {
+  writing-mode: tb-rl;
+  font-size: $main_txt_size;
+}
+
+.central{
+  width: calc(100% - 400px);
+  margin-left: 25px;
+}
+
+.central h1{
+  font-size: 100px;
+  color: $orange_color;
+  margin-bottom: 50px;
+}
+
+.central p{
+  color: $orange_color;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: 25px;
+  color: $orange_color;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.my-contacts p:first-of-type{
+  padding-bottom: 30px;
+}
+
+.my-contacts p{
+  padding: 2px;
+}
+
+.your-contacts{
+  margin-left: 80px;
+  display: flex;
+  align-items: flex-end;
+}
